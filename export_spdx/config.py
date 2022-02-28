@@ -26,8 +26,11 @@ parser.add_argument("--no_files",
                     help="Do not export file data for components (speeds up processing - default=false)",
                     action='store_true')
 parser.add_argument("-b", "--basic",
-                    help='''Do not export copyright, download link  or package file data (speeds up processing -
+                    help='''Do not export copyright, download link or package file data (speeds up processing -
                     same as using "--download_loc --no_copyrights --no_files")''',
+                    action='store_true')
+parser.add_argument("-e", "--internal",
+                    help="Generate an SBOM for internal usage instead of external usage - default=false",
                     action='store_true')
 parser.add_argument("--blackduck_url", type=str,
                     help="Black Duck server URL (can also be set as env. var. BLACKDUCK_URL)", default="")
@@ -54,7 +57,6 @@ def check_params():
 
     if args.output and os.path.exists(args.output):
         backup_file(args.output)
-
 
 def backup_file(filename):
     import os

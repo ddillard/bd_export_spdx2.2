@@ -146,18 +146,23 @@ def process_comp(comps_dict, tcomp, comp_data_dict):
                     "referenceLocator": pkg,
                     "referenceCategory": "PACKAGE_MANAGER",
                     "referenceType": "purl"
-                },
+                }
+            ]
+
+            if (config.args.internal):
+                thisdict["externalRefs"].append(
                 {
                     "referenceCategory": "OTHER",
                     "referenceType": "BlackDuckHub-Component",
                     "referenceLocator": tcomp['component'],
-                },
+                })
+                thisdict["externalRefs"].append(
                 {
                     "referenceCategory": "OTHER",
                     "referenceType": "BlackDuckHub-Component-Version",
                     "referenceLocator": cver
-                }
-            ]
+                })
+            
             if openhub_url is not None:
                 thisdict['externalRefs'].append({
                     "referenceCategory": "OTHER",

@@ -78,18 +78,21 @@ def run():
     globals.spdx["downloadLocation"] = "NOASSERTION"
     globals.spdx["filesAnalyzed"] = False
     globals.spdx["copyrightText"] = "NOASSERTION"
-    globals.spdx["externalRefs"] = [
-                {
-                    "referenceCategory": "OTHER",
-                    "referenceType": "BlackDuckHub-Project",
-                    "referenceLocator": project["_meta"]["href"],
-                },
-                {
-                    "referenceCategory": "OTHER",
-                    "referenceType": "BlackDuckHub-Project-Version",
-                    "referenceLocator": version["_meta"]["href"]
-                }
-            ]
+
+    if (config.args.internal):
+        globals.spdx["externalRefs"] = [
+                    {
+                        "referenceCategory": "OTHER",
+                        "referenceType": "BlackDuckHub-Project",
+                        "referenceLocator": project["_meta"]["href"],
+                    },
+                    {
+                        "referenceCategory": "OTHER",
+                        "referenceType": "BlackDuckHub-Project-Version",
+                        "referenceLocator": version["_meta"]["href"]
+                    }
+                ]
+
 
     spdx.add_relationship("SPDXRef-DOCUMENT", toppackage, "DESCRIBES")
     # Add top package for project version

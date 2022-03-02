@@ -461,8 +461,9 @@ async def async_get_comments(session, comp, token):
             result_data = await resp.json()
             mytime = datetime.datetime.now()
             # mytime.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
-            for comment in result_data['items']:
-                annotations.append(
+            if (config.args.internal):
+                for comment in result_data['items']:
+                    annotations.append(
                     {
                         "annotationDate": spdx.quote(mytime.strftime("%Y-%m-%dT%H:%M:%S.%fZ")),
                         "annotationType": "OTHER",

@@ -1,0 +1,224 @@
+{
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "copyrightText": "NOASSERTION",
+    "creationInfo": {
+        "created": "2022-03-04T18:00:40.380453Z",
+        "creators": [
+            "Tool: Black Duck SPDX export script https://github.com/matthewb66/bd_export_spdx2.2"
+        ],
+        "licenseListVersion": "3.9"
+    },
+    "dataLicense": "CC0-1.0",
+    "documentDescribes": [
+        "SPDXRef-Package-CloudPointVRTSLicD-18"
+    ],
+    "documentNamespace": "https://veritas.com/spdx/CloudPoint%20VRTSLicD/1.8/2022-03-04T18:00:40.380453Z",
+    "downloadLocation": "NOASSERTION",
+    "filesAnalyzed": false,
+    "hasExtractedLicensingInfos": [
+        {
+            "extractedText": "",
+            "licenseID": "LicenseRef-PublicDomain-SQLite"
+        }
+    ],
+    "name": "CloudPoint VRTSLicD/1.8",
+    "packages": [
+        {
+            "SPDXID": "SPDXRef-Package-CloudPointVRTSLicD-18",
+            "copyrightText": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "licenseConcluded": "NOASSERTION",
+            "licenseDeclared": "[template] Internal Key Asset",
+            "name": "CloudPoint VRTSLicD",
+            "packageComment": "Generated top level package representing Black Duck project",
+            "versionInfo": "1.8"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-Goprogramminglanguage-go1131",
+            "annotations": [],
+            "copyrightText": "NOASSERTION",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "NOASSERTION",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "Go programming language",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was manually added, the PackageSupplier was not populated",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "NOASSERTION",
+            "versionInfo": "go1.13.1"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-golangorgxnet-20190830-snapshot-ba9fcec4",
+            "annotations": [],
+            "copyrightText": "&copy = &#169f =\nCopyright (C) 2009 Apple Inc. All rights reserved\nCopyright (c) 2009 The Go Authors. All rights reserved\nCopyright 2009 The Go Authors. All rights reserved\nCopyright 2010 The Go Authors. All rights reserved\nCopyright 2011 The Go Authors. All rights reserved\nCopyright 2012 The Go Authors. All rights reserved\nCopyright 2013 The Go Authors. All rights reserved",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "golang.org/x/net",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was automatically detected, the PackageSupplier was based on the externalNamespace",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "Organization: long_tail",
+            "versionInfo": "20190830-snapshot-ba9fcec4"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-kardianos-osext-0",
+            "annotations": [],
+            "copyrightText": "Copyright (c) 2012 The Go Authors. All rights reserved\nCopyright 2012 The Go Authors. All rights reserved",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:rpm/fedora/golang-github-kardianos-osext@0-0.25.20190626git2bc1f35.fc31?arch=armv7hl",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "kardianos-osext",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was automatically detected as a direct file match, the PackageSupplier was based on the externalNamespace",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "Organization: fedora",
+            "versionInfo": "0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-robfigcron-300",
+            "annotations": [],
+            "copyrightText": "Copyright (C) 2012 Rob Figueiredo",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:github/robfig/cron@v3.0.0",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "MIT",
+            "licenseDeclared": "MIT",
+            "name": "robfig/cron",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was automatically detected, the PackageSupplier was based on the externalNamespace",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "Organization: github",
+            "versionInfo": "3.0.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-SQLite-3290",
+            "annotations": [],
+            "copyrightText": "NOASSERTION",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "NOASSERTION",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "LicenseRef-PublicDomain-SQLite",
+            "licenseDeclared": "LicenseRef-PublicDomain-SQLite",
+            "name": "SQLite",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was manually added, the PackageSupplier was not populated",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "NOASSERTION",
+            "versionInfo": "3.29.0"
+        },
+        {
+            "SPDXID": "SPDXRef-Package-streadwayamqp-0",
+            "annotations": [],
+            "copyrightText": "Copyright (c) 2009 AMQP Working Group.\nCopyright (c) 2012, Sean Treadway, SoundCloud Ltd.\nCopyright (c) 2012-2019, Sean Treadway, SoundCloud Ltd.\nCopyright (c) 2016, Sean Treadway, SoundCloud Ltd.",
+            "description": "NOASSERTION",
+            "downloadLocation": "NOASSERTION",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE_MANAGER",
+                    "referenceLocator": "pkg:rpm/fedora/golang-github-streadway-amqp@0-0.6.20190514git75d898a.fc31?arch=armv7hl",
+                    "referenceType": "purl"
+                }
+            ],
+            "filesAnalyzed": false,
+            "licenseComments": "The concluded license was taken from the package level",
+            "licenseConcluded": "BSD-3-Clause",
+            "licenseDeclared": "BSD-3-Clause",
+            "name": "streadway/amqp",
+            "packageComment": "This is an open source component from the Black Duck Knowledge Base which was automatically detected, the PackageSupplier was based on the externalNamespace",
+            "packageFileName": "NOASSERTION",
+            "packageHomepage": "NOASSERTION",
+            "packageSupplier": "Organization: fedora",
+            "versionInfo": "0"
+        }
+    ],
+    "relationships": [
+        {
+            "relatedSpdxElement": "SPDXRef-Package-CloudPointVRTSLicD-18",
+            "relationshipType": "DESCRIBES",
+            "spdxElementId": "SPDXRef-DOCUMENT"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-Goprogramminglanguage-go1131",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-golangorgxnet-20190830-snapshot-ba9fcec4",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-kardianos-osext-0",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-robfigcron-300",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-SQLite-3290",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        },
+        {
+            "relatedSpdxElement": "SPDXRef-Package-streadwayamqp-0",
+            "relationshipType": "CONTAINS",
+            "spdxElementId": "SPDXRef-Package-CloudPointVRTSLicD-18"
+        }
+    ],
+    "snippets": [],
+    "spdxVersion": "SPDX-2.2"
+}

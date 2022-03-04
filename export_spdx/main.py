@@ -46,7 +46,7 @@ globals.bd = Client(
 
 
 def run():
-    print("BLACK DUCK SPDX EXPORT SCRIPT VERSION {}\n".format(globals.script_version))
+    print("Veritas Black Duck SPDX Export Script v{}\n".format(globals.script_version))
 
     config.check_params()
 
@@ -69,7 +69,7 @@ def run():
     globals.spdx["creationInfo"] = {
         # "created": spdx.quote(version['createdAt'].split('.')[0] + 'Z'),
         "created": spdx.quote(mytime.strftime("%Y-%m-%dT%H:%M:%S.%fZ")),
-        "creators": ["Tool: Black Duck SPDX export script https://github.com/matthewb66/bd_export_spdx2.2"],
+        "creators": ["Tool: Veritas Black Duck SPDX Export Script v" + globals.script_version],
         "licenseListVersion": "3.9",
     }
     if 'description' in project.keys():

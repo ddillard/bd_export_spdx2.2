@@ -14,6 +14,11 @@ from export_spdx import data
 
 
 def process_comp(comps_dict, tcomp, comp_data_dict):
+    
+    # Don't process ignored components
+    if (tcomp['ignored']):
+        return ""
+
     cver = tcomp['componentVersion']
     if cver in comps_dict.keys():
         # ind = compverlist.index(tcomp['componentVersion'])

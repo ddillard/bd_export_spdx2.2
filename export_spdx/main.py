@@ -10,6 +10,7 @@ from export_spdx import spdx
 from export_spdx import config
 from export_spdx import process
 from export_spdx import projects
+from urllib.parse import urlparse
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', stream=sys.stderr, level=logging.INFO)
 logging.getLogger("requests").setLevel(logging.INFO)
@@ -41,6 +42,9 @@ globals.bd = Client(
     timeout=config.args.blackduck_timeout
 )
 
+
+def urlize(str):
+    return str.replace(" ", "%20")
 
 def run():
     print("BLACK DUCK SPDX EXPORT SCRIPT VERSION {}\n".format(globals.script_version))
@@ -74,7 +78,18 @@ def run():
     globals.spdx["name"] = spdx.quote(project['name'] + '/' + version['versionName'])
     globals.spdx["dataLicense"] = "CC0-1.0"
     globals.spdx["documentDescribes"] = [toppackage]
-    globals.spdx["documentNamespace"] = version['_meta']['href']
+
+    system = urlparse(version['_meta']['href']).netloc
+    pieces = system.split(".")
+    l = len(pieces)
+    if ( l < 2 ):
+        base = system
+    else:
+        base = pieces[l - 2] + "." + pieces[l - 1]
+    
+    globals.spdx["documentNamespace"] = "https://" + base + "/spdx/" + urlize(project['name']) + \
+                    "/" + urlize(version['versionName']) + "/" + mytime.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
+    
     globals.spdx["downloadLocation"] = "NOASSERTION"
     globals.spdx["filesAnalyzed"] = False
     globals.spdx["copyrightText"] = "NOASSERTION"

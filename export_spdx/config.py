@@ -7,7 +7,7 @@ from export_spdx import spdx
 from export_spdx import globals
 
 parser = argparse.ArgumentParser(description='"Export SPDX JSON format file for the given project and version"',
-                                 prog='bd_export_spdx22_json.py')
+                                 prog='bd_export_spdx22.py')
 parser.add_argument("project_name", type=str, help='Black Duck project name')
 parser.add_argument("project_version", type=str, help='Black Duck version name')
 parser.add_argument("-v", "--version", help="Print script version and exit", action='store_true')

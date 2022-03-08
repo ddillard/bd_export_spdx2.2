@@ -79,10 +79,10 @@ def process_comp(comps_dict, tcomp, comp_data_dict):
 
         if bomentry['componentType'] == 'CUSTOM_COMPONENT':
             packageinfo = packageinfo + " custom component"
-        if bomentry['componentType'] == 'SUB_PROJECT':
+        elif bomentry['componentType'] == 'SUB_PROJECT':
             packageinfo = packageinfo + " sub project"
         else:
-            packageinfo = packageinfo + "n open source component from the Black Duck Knowledge Base"
+            packageinfo = packageinfo + " component from the Black Duck Knowledge Base"
 
         if len(bomentry['matchTypes']) > 0:
             firstType = bomentry['matchTypes'][0]

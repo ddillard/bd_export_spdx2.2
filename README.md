@@ -1,4 +1,11 @@
-# Synopsys Black Duck - bd_export_spdx22_json.py v0.20 Async
+# Notice
+
+This is a fork of original software from https://github.com/blackducksoftware/bd_export_spdx2.2.  It's been modified to:
+- Fix several bugs 
+- Add some new features, most notably the ability to generate new SBOMs and still comply with the SPDX specification
+- Add some new "knobs", most notably the concept of internal and external SBOMS
+
+# Synopsys Black Duck - bd_export_spdx22.py Async
 # OVERVIEW
 
 This script is provided under an OSS license (specified in the LICENSE file) to allow users to export SPDX version 2.2 in JSON format from Black Duck projects.
